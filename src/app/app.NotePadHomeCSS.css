@@ -1,0 +1,70 @@
+.perentDiv{
+    text-align: center;
+    margin: auto;
+}
+.title{
+    text-align: center;
+    margin-right: 45px;
+    font-size: 90px;
+}
+.MainDiv{
+    height: 600px;
+    width:600px;
+    margin:auto;
+    border: 5px black;
+}
+.NavBar{
+    margin: auto;
+    width: 600px;
+    height: 30px;
+}
+.NotesDropDown{
+    margin: auto;
+    width: 150px;
+    height: 30px;
+    margin-left: 10px;
+}
+.ButtonOpen{
+    margin: auto;
+    width: 50px;
+    height: 30px;
+    margin-left: 10px;
+}
+.ButtonSave{
+    margin: auto;
+    width: 50px;
+    height: 30px;
+    margin-left: 10px;
+}
+.ButtonDelete{
+    margin: auto;
+    width: 50px;
+    height: 30px;
+    margin-left: 10px;
+}
+.ButtonNew{
+    margin: auto;
+    width: 50px;
+    height: 30px;
+}
+.SaveName{
+    margin: auto;
+    margin-left: 10px;
+    width: 80px;
+    height: 20px;
+}
+.SavedText{
+    margin: auto;
+    width: 80px;
+    height: 30px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.NotesBox{
+    margin-top: 10px;
+    width: 565px;
+    height: 400px;
+    resize: none;
+
+}
+

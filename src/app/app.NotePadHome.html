@@ -1,0 +1,19 @@
+<Div class="perentDiv"></Div>
+<h1 class="title">Web NotePad</h1>
+<div id="MainDiv" name="MainDiv" class="MainDiv">
+
+<div class="NavBar">
+<button (click)="onNew()" id="ButtonNew" name="ButtonNew" type="button" class="ButtonNew">New</button>
+
+<select id="NotesDropDown" name="NotesDropDown" class="NotesDropDown" #toOpen (click)="updateDropdown()" (input)="onOpen(toOpen.value)">
+    <option *ngFor="let fileName of storedDataList">{{fileName}}</option>
+</select>
+<button (click)="onSave(docTitle.value, notes.value)" id="ButtonSave" name="ButtonSave" type="button" class="ButtonSave">Save</button>
+<button (click)="onDelete()" id="ButtonDelete" name="ButtonDelete" type="button" class="ButtonDelete">Delete</button>
+<input type="text" id="SaveName" name="SaveName" class="SaveName" #docTitle value="{{currentlyOpenFileName}}" (keyup)="updateOnEdit()">
+<p class="SavedText">{{savedText}}</p>
+</div>
+<textarea #notes id="NotesBox" name="NotesBox" rows="50" cols="50" class="NotesBox" (click)="updateOnEdit()">
+{{currentlyOpenFile}} 
+</textarea>
+</div>
